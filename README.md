@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/interactiveratingcomponent-C5Wdp3E2Tu)
 - Live Site URL: [Live site URL](https://mustapha62996.github.io/rating-component/)
 
 
