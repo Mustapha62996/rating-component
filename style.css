@@ -1,0 +1,111 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+    --orange: hsl(25, 97%, 53%);
+    --medium-gray: hsl(220, 10%, 24%);
+    --light-gray: hsl(216, 12%, 54%);
+    --dark-blue: hsl(214, 20%, 16%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body{
+    background-color: var(--very-dark-blue);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+main{
+    background: linear-gradient(to bottom,var(--dark-blue),hsl(210, 30%, 13%));
+    padding: 20px;
+    width: 300px;
+    height: 310px;
+    border-radius: 20px;
+}
+.rating-state{
+    transition: .5s ease-in;
+}
+.rating-state .star-icon{
+    border: 0 solid;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--medium-gray);
+}
+h1{
+    color: var(--white);
+    font-family: 'Overpass', sans-serif;
+}
+.rating-state .rating-body{
+    color: var(--light-gray);
+    font-size: 15px;
+    line-height: 1.2rem;
+    font-family: 'Overpass', sans-serif;
+}
+.number-container{
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+.number-container .number-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0 solid;
+    padding: 15px;
+    border-radius: 50%;
+    height: 10px;
+    background-color: var(--medium-gray);
+    color: var(--light-gray);
+    cursor: pointer;
+    font-family: 'Overpass', sans-serif;
+    
+}
+.number-container .number-items:hover{
+    transition: .5s;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+#selected{
+    background-color: var(--light-gray);
+    color: var(--white);
+}
+.rating-state button{
+    margin: 15px;
+    width: 280px;
+    padding: 15px;
+    border-radius: 25px;
+    color: var(--white);
+    background-color: var(--orange);
+    cursor: pointer;
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: .1rem;
+}
+.rating-state button:hover{
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+
+.thank-you-state{
+    display: none;
+    text-align: center; 
+}
+.thank-you-state .rating-score{
+    color: var(--orange);
+    background-color: var(--medium-gray);
+    border-radius: 10px;
+    padding: 5px;
+    width: 200px;
+    margin: 15px auto;
+}
+.thank-you-state h2{
+    color: var(--white);
+    font-family: 'Overpass', sans-serif;
+}
+.thank-you-state p{
+    color: var(--light-gray);
+    line-height: 1.2rem;
+    font-family: 'Overpass', sans-serif;
+}

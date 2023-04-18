@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+  <main>
+    <!-- Rating state start -->
+      <section class="rating-state">
+        <img src="./images/icon-star.svg" alt="star icon" class="star-icon">
+
+        <h1>How did we do?</h1>
+
+        <p class="rating-body">Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+        
+        <div class="number-container">
+          <div class="number-items">1</div>
+          <div class="number-items">2</div>
+          <div class="number-items">3</div>
+          <div class="number-items">4</div>
+          <div class="number-items">5</div>
+        </div>
+
+        <button type="submit" id="submit-btn">SUBMIT</button>
+      </section>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+      <section class="thank-you-state">
+        <img src="./images/illustration-thank-you.svg" alt="Thank you image illustration" class="thank-you-image">
+        <p class="rating-score">You selected 0 out of 5</p>
+
+        <h2>Thank you!</h2>
+
+        <p class="thank-you-body">We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+      </section>
+
+    <!-- Thank you state end -->
+  </main>
+  
+  <script src="app.js"></script>
+</body>
+</html>
